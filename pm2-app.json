@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "leam-client-v3",
+            "script": "npm",
+            "args" : "run start"
+        }
+    ]
+}
