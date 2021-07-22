@@ -17,4 +17,7 @@ export default {
 	alignSelf: {
 		end: 'flex-end',
 	},
+	bp: {
+		mobile: '960px',
+	},
 }

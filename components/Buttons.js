@@ -19,7 +19,7 @@ export const SubheadingButton = styled.button(
 		css`
 			align-self: ${theme.alignSelf[align]};
 		`};
-		@media only screen and (max-width: 960px) {
+		@media only screen and (max-width: ${theme.bp.mobile}) {
 			font-size: 18px;
 			line-height: 22.5px;
 			align-self: flex-start;
