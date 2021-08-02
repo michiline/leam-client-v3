@@ -2,12 +2,12 @@ import { useTheme } from 'styled-components'
 import useWindow from '../../common/hooks/useWindow'
 import useScrolledDirection from '../../common/hooks/useScrolledDirection'
 import { HeaderContainer, CenterContainer, LinksContainer } from './Containers'
-import { Hamburger, Logo } from './Icons'
+import { Hamburger, X, Logo } from './Icons'
 import { WebLink } from './Links'
 import { extractPx } from '../../common/utils'
 import Link from 'next/link'
 
-const Header = () => {
+const Header = ({ show, handleOpen, handleClose }) => {
 	const { scrollY, scrolled } = useScrolledDirection({ boundary: 0 })
 	const { width } = useWindow()
 	const theme = useTheme()
@@ -25,13 +25,18 @@ const Header = () => {
 	} else {
 		nav = (
 			<LinksContainer>
-				<Hamburger src='/images/hamburger.png' />
+				<Hamburger
+					src='/images/hamburger.png'
+					onClick={handleOpen}
+					show={!show}
+				/>
+				<X src='/images/close.png' onClick={handleClose} show={show} />
 			</LinksContainer>
 		)
 	}
 	return (
 		<HeaderContainer scrolled={scrolled} transparent={scrollY == 0}>
-			<CenterContainer>
+			<CenterContainer show={show}>
 				<Link href='/'>
 					<Logo src='/images/logo-text.png' />
 				</Link>

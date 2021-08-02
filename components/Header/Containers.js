@@ -39,9 +39,9 @@ export const CenterContainer = styled.div(
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		padding-left: ${theme.spacing(3)};
+		padding-right: ${theme.spacing(3)};
 		@media only screen and (max-width: ${theme.bp.mobile}) {
-			padding-left: ${theme.spacing(3)};
-			padding-right: ${theme.spacing(3)};
 			max-width: none;
 		}
 	`
