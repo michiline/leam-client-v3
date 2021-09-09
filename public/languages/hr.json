@@ -1,0 +1,22 @@
+{
+	"header": {
+		"weekend": "Vikend izleti",
+		"local": "Lokalna putovanja",
+		"distant": "Daleka putovanja",
+		"gallery": "Fotogalerija",
+		"about": "O nama"
+	},
+	"drawer": {
+		"home": "Početna",
+		"weekend": "Vikend izleti",
+		"local": "Lokalna putovanja",
+		"distant": "Daleka putovanja",
+		"gallery": "Fotogalerija",
+		"about": "O nama"
+	},
+	"cover": {
+		"h1": "LittleEagle&Mich",
+		"subheading": "Putopisne ideje i savjeti za ljude s puno želja a s malo vremena",
+		"subheadingButton": "Kreni na avanturu"
+	}
+}

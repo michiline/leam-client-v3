@@ -1,22 +1,19 @@
 import Cover from '../components/Cover'
-import { MainContainer } from '../components/Containers'
+import {
+	PageMainContainer,
+	PageContentContainer,
+} from '../components/Containers'
 
-const HomePage = () => {
+const HomePage = ({ text }) => {
 	return (
-		<MainContainer>
+		<PageMainContainer>
 			<Cover
 				src={`${process.env.NEXT_PUBLIC_STATIC_URL}/cover/home.jpg`}
-				text={coverText}
+				text={text.cover}
 			/>
-		</MainContainer>
+			<PageContentContainer></PageContentContainer>
+		</PageMainContainer>
 	)
-}
-
-const coverText = {
-	h1: 'LittleEagle&Mich',
-	subheading:
-		'Putopisne ideje i savjeti za ljude s puno želja a malo vremena.',
-	subheadingButton: 'Kreni na avanturu',
 }
 
 export default HomePage

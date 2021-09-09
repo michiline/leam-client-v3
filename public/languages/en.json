@@ -1,0 +1,22 @@
+{
+	"header": {
+		"weekend": "Weekend trips",
+		"local": "Local travels",
+		"distant": "Distant travels",
+		"gallery": "Gallery",
+		"about": "About us"
+	},
+	"drawer": {
+		"home": "Home",
+		"weekend": "Weekend trips",
+		"local": "Local travels",
+		"distant": "Distant travels",
+		"gallery": "Gallery",
+		"about": "About us"
+	},
+	"cover": {
+		"h1": "LittleEagle&Mich",
+		"subheading": "Travel ideas and tips for people with little time but plenty of desires",
+		"subheadingButton": "Start an adventure"
+	}
+}

@@ -1,6 +1,6 @@
 import { CoverContainer, CenterContainer } from './Containers'
-import { H1, Subheading } from './Text'
-import { SubheadingButton } from './Buttons'
+import { H1, Subheading } from '../Text'
+import { SubheadingButton } from '../Buttons'
 
 const Cover = ({ src, text }) => {
 	return (

@@ -16,6 +16,22 @@ export const H1 = styled.h1(
 	`
 )
 
+export const H2 = styled.h1(
+	({ theme, marginTop }) => css`
+		font-family: Lobster;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 38px;
+		line-height: 47px;
+		width: max-content;
+		margin-top: ${marginTop ? theme.spacing(marginTop) : 0};
+		@media only screen and (max-width: ${theme.bp.mobile}) {
+			font-size: 24px;
+			line-height: 305px;
+		}
+	`
+)
+
 export const Subheading = styled.p(
 	({ theme, color, marginTop }) => css`
 		font-family: 'Mulish';
