@@ -3,6 +3,7 @@ import {
 	PageMainContainer,
 	PageContentContainer,
 } from '../components/Containers'
+import ExploreBlogCategories from '../components/ExploreBlogCategory'
 
 const HomePage = ({ text }) => {
 	return (
@@ -11,7 +12,9 @@ const HomePage = ({ text }) => {
 				src={`${process.env.NEXT_PUBLIC_STATIC_URL}/cover/home.jpg`}
 				text={text.cover}
 			/>
-			<PageContentContainer></PageContentContainer>
+			<PageContentContainer>
+				<ExploreBlogCategories text={text} />
+			</PageContentContainer>
 		</PageMainContainer>
 	)
 }

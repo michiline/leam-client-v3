@@ -6,9 +6,12 @@ export const CenterContainer = styled.div(
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: center;
-		width: max-content;
-		padding-left: ${theme.spacing(3)};
-		padding-right: ${theme.spacing(3)};
+		width: 780px;
+		@media only screen and (max-width: ${theme.bp.mobile}) {
+			padding-left: ${theme.spacing(3)};
+			padding-right: ${theme.spacing(3)};
+			width: 100%;
+		}
 	`
 )
 

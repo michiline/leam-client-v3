@@ -34,7 +34,7 @@ export const HeaderContainer = styled.h1(
 export const CenterContainer = styled.div(
 	({ theme }) => css`
 		width: 100%;
-		max-width: 960px;
+		max-width: ${theme.bp.mobile};
 		display: flex;
 		flex-direction: row;
 		align-items: center;

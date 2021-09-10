@@ -36,19 +36,21 @@ export const CenterContainer = styled.div(
 		align-items: flex-start;
 		justify-content: flex-start;
 		position: relative;
-		@media only screen and (max-width: 960px) {
+		@media only screen and (max-width: ${theme.bp.mobile}) {
 			max-width: 250px;
 		}
 		min-height: 400px;
 	`
 )
 
-export const LinksContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	@media only screen and (max-width: 960px) {
-		max-width: 250px;
-	}
-`
+export const LinksContainer = styled.div(
+	({ theme, show }) => css`
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		@media only screen and (max-width: ${theme.bp.mobile}) {
+			max-width: 250px;
+		}
+	`
+)

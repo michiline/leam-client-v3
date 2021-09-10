@@ -2,7 +2,7 @@
 	"header": {
 		"weekend": "Weekend trips",
 		"local": "Local travels",
-		"distant": "Distant travels",
+		"distant": "Distant adventures",
 		"gallery": "Gallery",
 		"about": "About us"
 	},
@@ -10,7 +10,7 @@
 		"home": "Home",
 		"weekend": "Weekend trips",
 		"local": "Local travels",
-		"distant": "Distant travels",
+		"distant": "Distant adventures",
 		"gallery": "Gallery",
 		"about": "About us"
 	},
@@ -18,5 +18,31 @@
 		"h1": "LittleEagle&Mich",
 		"subheading": "Travel ideas and tips for people with little time but plenty of desires",
 		"subheadingButton": "Start an adventure"
+	},
+	"exploreBlogCategory": {
+		"h2": "Explore blogs & tips",
+		"categories": [
+			{
+				"href": "/category/weekend",
+				"color": "orange",
+				"title": "Weekend trips",
+				"description": "Ideas and tips for weekend trips, where and how to camp, what to visit.",
+				"img": "https://littleeagle.s3.eu-central-1.amazonaws.com/gallery/low/travels/img128.jpg"
+			},
+			{
+				"href": "/category/local",
+				"color": "green",
+				"title": "Local travels",
+				"description": "Longer (2-3 weeks) travels in Croatia and neighbouring countries.",
+				"img": "https://littleeagle.s3.eu-central-1.amazonaws.com/gallery/low/travels/img127.jpg"
+			},
+			{
+				"href": "/category/distant",
+				"color": "blue",
+				"title": "Distant adventures",
+				"description": "Longer travels in remote countries - what to see and how to prepare.",
+				"img": "https://littleeagle.s3.eu-central-1.amazonaws.com/gallery/low/travels/img126.jpg"
+			}
+		]
 	}
 }
